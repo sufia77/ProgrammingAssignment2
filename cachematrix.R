@@ -32,3 +32,9 @@ cacheSolve <- function(x, ...) {
   x$setinverse(i)
   i
 }
+
+a <- diag(5, 6)
+cacheMatrix <- makeCacheMatrix(a) #call the matrix
+cacheSolve(cacheMatrix) # get the result as inverse of matrix
+
+
